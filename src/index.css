@@ -1,13 +1,222 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+
+*{
+  margin:0;
+  font-family: "Quicksand";
+  color: #333;
+  background-color: rgb(204, 203, 203);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Navbar{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 4px solid black;
+}
+.Navbar h1{
+  color: red;
+}
+.Navbar .links{
+  margin-left: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.Navbar a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: 10rem;
+}
+.Navbar a:hover{
+  color: #f1356d;
+}
+.content{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog-preview{
+  padding: 10px,16px;
+  margin: 20px 0;
+  margin-left: 20px;
+  
+  
+  
+  border: 2px solid black;
+  
+  border-radius: 6px;
+
+}
+.blog-preview:hover{
+  box-shadow: 1px 3px 8px black;
+  border-radius: 10px;
+}
+.blog-preview h2{
+  font-size: 20px;
+  color: rgb(174, 51, 72);
+  margin-bottom: 8px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.blog-preview p{
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 10px;
+
+}
+.blog-preview a{
+  text-decoration: none;
+}
+
+.blog-detail button{
+  background-color: red;
+  color: white;
+  border: 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+
+}
+.blog-detail button:hover{
+  background-color: black;
+  color: white;
+}
+.blog-detail h2{
+  color: red;
+  font-weight: 5rem;
+  letter-spacing: 2px;
+}
+.blog-detail p span{
+  color: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+}
+
+.blog-detail p{
+  font-weight: bold;
+  font-size: 1.2rem;
+
+}
+.blog-detail .line{
+  color: black;
+
+}
+.blog-detail .blog-body{
+  font-size: 1.2rem;
+  font-weight:bold;
+  line-height: 2rem;
+
+}
+.blog-detail .loading{
+  color: black;
+  font-weight: bold;
+
+}
+/*
+.blog-detail h2,p{
+  color: red;
+  font-size: 300;
+  line-height: 2rem;
+
+}
+*/
+
+/* create a new blog */
+.Home p{
+  color: black;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+
+.create{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+ 
+
+}
+
+.create label{
+  text-align: left;
+  display: block;
+  font-weight: bold;
+  color: black;
+}
+.create h2{
+  font-size: 20px;
+  color: red;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 2px solid black;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button{
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+
+}
+
+.back-home{
+  color: red;;
+  text-decoration: none;
+  background-color: greenyellow;
+  border-radius: 8px;
+  padding: 3px;
+  margin-top: 15px;
+  margin:auto;
+  border: 2px solid black;
+
+}
+.back-home:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+/* @media only screen and (max-width: 390px) : means we applying all this properties when width is 390 or less than that  */
+
+@media only screen and (max-width: 438px){
+  .Navbar .links{
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .Navbar a{
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 3px;
+    font-weight: 5rem;
+    font-size:1rem;
+    
+  }
+  
+.Navbar{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 4px solid black;
+}
+
 }

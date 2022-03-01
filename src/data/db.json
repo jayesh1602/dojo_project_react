@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "title": "jayesh",
+      "body": "rrrrrrrrrrrrrr",
+      "author": "mario",
+      "id": 2
+    },
+    {
+      "title": "ram mohan ",
+      "body": "ssssssssssss",
+      "author": "mario",
+      "id": 3
+    },
+    {
+      "title": "this is my first blog",
+      "body": "as this is my first blog , so i cant much handle it so much good but you peoples are vary brilliant so yo all make it good and make it responsives in design and make it as good webiste.",
+      "author": "J.S.Patil",
+      "id": 6
+    },
+    {
+      "title": "social issue",
+      "body": "currently there is many social issues are happenig around us. like i am collage student, so collages are openign or not this is main issue for us.",
+      "author": "J.S.Patil",
+      "id": 7
+    }
+  ]
+}

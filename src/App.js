@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+//import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import Create from './create';
+import BlogDetails from './BlogDetails';
+import NotFound from './NotFound';
+
 
 function App() {
+  /*
+  const title  = "welcome to react tech";
+  const likes = 50;
+  const link1 = "https://facebook.com";
+  */
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+     <div className="App">
+        <Navbar />    {/*  Navbar component is attached in app.js component i.e root component      */} 
+                             
+        <div className='content'>
+         <Switch>
+           <Route exact path="/home">
+             <Home/>
+
+           </Route>
+           
+           <Route exact path="/create">
+             <Create/>
+
+           </Route>
+           <Route path="/blogs/:id">
+             <BlogDetails/>
+
+           </Route>
+           <Route path="*">
+             <NotFound/>
+           </Route>
+         </Switch>
+        
+        </div>
+     
+      </div>
+
+    </Router>
   );
 }
 
